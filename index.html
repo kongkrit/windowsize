@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Window Info</title>
+<body>
+  <h1>Window Info</h1>
+  <p id="info"></p>
+
+  <script>
+    function updateInfo() {
+      const w = window.innerWidth;
+      const h = window.innerHeight;
+      const dpr = window.devicePixelRatio;
+      document.getElementById('info').textContent =
+        `Width: ${w}px, Height: ${h}px, devicePixelRatio: ${dpr}`;
+    }
+
+    window.addEventListener('resize', updateInfo);
+    updateInfo(); // initial
+  </script>
+</body>
+</html>
