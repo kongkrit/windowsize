@@ -1,2 +1,2 @@
 # windowsize
-just tell me the current window size in browser!
+just tell me the current browser window size!
